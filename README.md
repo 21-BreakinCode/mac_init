@@ -95,7 +95,35 @@ brew install mcfly
 eval "$(mcfly init zsh)" >> ~/.zshrc
 exec $SHELL
 ```
-- (TBD*3)
+
+- syntax highlighting, auto suggestions
+```bash
+# Install the Syntax Highlighting plugin
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins"
+
+# Install the AutoSuggestion Plugin
+antigen bundle zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+```bash
+## change: fg=3 => typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+nano ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
+```
+
+- In ~/.zshrc, add the following
+```text
+# plugin content
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+# custom alias
+alias zshconfig="code ~/.zshrc"
+alias zshreboot="exec $SHELL"
+alias cls="clear"
+```
 ### VsCode settings
 ```json
 {
@@ -185,7 +213,7 @@ exec $SHELL
 ```
 ### Raycast plugins
 - VsCode Project manager 
-- ticktickt
+- TickTick
 - Obsidian
 ### Obsidian plugins
 - (TBD)
