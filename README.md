@@ -55,6 +55,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 - [Obsidian](https://obsidian.md/)
 - [Sourcetree](https://www.sourcetreeapp.com/)
 - [Todoist](https://todoist.com/home)
+- [Syntax highlighting](https://github.com/sbarex/SourceCodeSyntaxHighlight)
 ```bash
 # Rectangle
 brew install --cask rectangle
@@ -70,6 +71,8 @@ brew install --cask obsidian
 brew install --cask sourcetree
 # Todoist
 brew install --cask todoist
+# Syntax highlighting
+brew install --cask --no-quarantine syntax-highlight
 ```
 
 ## External app install
