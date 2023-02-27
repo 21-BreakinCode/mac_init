@@ -72,7 +72,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
     
     ```bash
     # change: fg=3 => typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
-    nano ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
+    open ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
     ```
     
     - add **zsh plugins** and **zsh alias**
