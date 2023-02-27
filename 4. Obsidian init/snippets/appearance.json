@@ -1,0 +1,16 @@
+{
+  "cssTheme": "Minimal",
+  "baseFontSize": 23,
+  "accentColor": "#477eff",
+  "enabledCssSnippets": [
+    "sanctum_customize",
+    "ebullientworks_rm_header_symbol",
+    "ebullientworks_specific",
+    "heading_config",
+    "minimal_figure_opacity",
+    "hover_pane",
+    "calendar",
+    "common_config"
+  ],
+  "theme": "obsidian"
+}

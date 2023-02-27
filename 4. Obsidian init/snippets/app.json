@@ -1,0 +1,18 @@
+{
+  "strictLineBreaks": false,
+  "showFrontmatter": false,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "defaultViewMode": "preview",
+  "readableLineLength": true,
+  "showInlineTitle": true,
+  "vimMode": false
+}

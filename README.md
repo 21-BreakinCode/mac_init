@@ -18,15 +18,7 @@
 > - [Xmind -- app store](https://xmind.app/pricing/?ref=googlepa)
 > - [Raycast](https://www.raycast.com/)
 
-3. Through [VsCode folder](3.%20VsCode%20init/README.md) can have an easy vscode setting snippet, but must install plugins in own vscode app after or it would fail with errors
+3. Through [VsCode folder](3.%20VsCode%20init/README.md) can have an easy vscode setting snippet, but must install extension in own vscode app after or it would fail with errors
 
 
-4. Through [Obsidian folder](4.%20Obsidian%20init/README.md)
-
-
-### Raycast plugins
-- VsCode Project manager 
-- TickTick
-- Obsidian
-### Obsidian plugins
-- (TBD)
+4. Through [Obsidian folder](4.%20Obsidian%20init/README.md) can quickly import plugins and some nice looking view in the vault

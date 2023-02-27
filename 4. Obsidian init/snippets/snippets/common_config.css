@@ -1,0 +1,119 @@
+/* ref: https://jdev.tw/blog/7676, https://jdev.tw/blog/7745 */
+
+/* tab pane configure */
+.is-focused .mod-active .workspace-tab-header.is-active {
+    border-top: 3px solid orange;
+}
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: rgb(var(--color-accent-rgb));
+}
+
+/* highlight caret line */
+.theme-dark .cm-active, .theme-dark .suggestion-item.is-selected {
+    background-color: #414040 !important;
+}
+.theme-light .cm-active, .theme-light .suggestion-item.is-selected {
+background-color: lightyellow !important;
+}
+
+/* dialog window border */
+.modal.mod-settings, .modal.mod-community-plugin, 
+.modal.mod-community-theme {
+  border: 2px solid rgb(var(--color-accent-rgb));
+}
+
+/* Hover Editor加上邊框 */
+/* compatible with Sanctum theme */
+.popover-content {
+  border: 2px solid rgb(var(--color-accent-rgb));
+}
+
+/* Callout區塊最下方不要有padding, 最左側加邊條 */
+.callout {
+    padding: 8px 0px 0px 0px;  /* 上 右 下 左 */
+    border-left: 5px solid rgba(var(--callout-color));
+}
+
+/* .callout-title內含.callout-icon, .callout-title-inner, .callout-fold
+/* Callout標題列最左向右移, 下方填充8px，與內文區有8px的距離 */
+.callout-title {
+padding-left: 8px;
+padding-bottom: 8px;
+}
+
+/* icon向下移動 */
+/* .callout-icon {
+margin-top: 8px;
+} */
+
+.callout-fold {
+margin-left: 4px;
+}
+
+/* 內文區背景變暗 */
+.callout-content, .admonition-content {
+background-color: rgba(var(--callout-color), 0.1);
+padding: 0px 0px 0px 16px;
+}
+
+/* pdf page breakers */
+/* Ref: https://jdev.tw/blog/7714 */
+
+@media print {
+  .theme-dark .my-page-break {
+    page-break-after: always;
+    visibility: hidden;
+  }
+
+  /* 加上 .eject 列印時跳頁無效 */
+  hr {
+    page-break-after: always;
+    visibility: hidden;
+  }
+}
+
+@media screen {
+  .theme-dark .my-page-break {
+    page-break-after: always;
+    display: block;
+    width: 50%;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed gray;
+    margin: 1em auto;
+    padding: 0;
+  }
+
+  /* div.hr內含hr */
+  .eject hr {
+    border-top:1px dashed orange;
+  }
+
+  .eject .hr {
+    width: 50%;
+    left: 25%;
+  }
+
+  .eject .hr::before {
+    margin: auto 10px;
+    content: '🖨🦘PAGE BREAK';
+    position: absolute;
+    font-family: var(--default-font);
+    font-size: 0.7rem;
+    width: 200px;
+    left: calc(50% - 50px);
+    padding: 0px 2px;
+    top: 0px;
+    opacity: 0.7;
+  }
+}
+
+/* Dataview line separator */
+/* Add a line separator between columns */
+.table-view-table tr {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
