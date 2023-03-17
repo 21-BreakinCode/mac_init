@@ -1,5 +1,0 @@
-/* Ref: http://jdev.tw/blog/7043 */
-/* Hover Editor */
-.popover, .popover.hover-popover {
-    border: 1px solid var(--ax1);
-  }
