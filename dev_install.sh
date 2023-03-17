@@ -1,11 +1,6 @@
 # This script is for automation installing the useful apps that mention in the folder "2. useful apps"
 # Update at 2023/03/15
 
-# Ask to enter password value for changing the default shell useage
-echo "Enter your user password: "
-read -s password
-echo "You've entered $password."
-
 ## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 brew doctor | xargs echo # Check brew install 
@@ -35,6 +30,10 @@ rm iTerm2-3_4_5.zip
 ## oh-my-zsh settings
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Ask user password value for changing the default shell
+echo "Enter your user password for permission changing the default shell: "
+read -s password
+echo "You've entered $password."
 # Set as default shell
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 echo "$password" | sudo -S chsh -s $(which zsh)

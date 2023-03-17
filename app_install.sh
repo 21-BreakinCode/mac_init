@@ -12,39 +12,24 @@ read -p "If return: 'Your system is ready to brew.' -> Press enter to continue, 
 echo "Process continue"
 
 
-## Download from app store
-# install mas to download from app store
-echo "install through app store"
+## Download from app store through mas
+# Install Dropzone4, Xnip, Xmind, and line
+echo "install from app store through mas..."
 brew install mas
-# install Dropzone4
-mas install 1485052491
-# install Xnip
-mas install 1221250572
-# install Xmind
-mas install 1327661892
-# install hidden bar
-mas install 1452453066
-# install line
-mas install 539883307
+mas install 1485052491 # Dropzone4
+mas install 1221250572 # Xnip
+mas install 1327661892 # Xmind
+mas install 539883307 #line
 
 
-## Download directly through brew
-echo "install through brew"
-# Rectangle
+## Download app through brew
+# Install Rectangle, Maccy, Anki, Obsidian, Sourcetree, Todoist, Syntax highlighting, and Raycast
+echo "install app through homebrew..."
 brew install --cask rectangle
-# Maccy
 brew install --cask maccy
-# Hidden Bar
-brew install --cask hiddenbar
-# Anki 
 brew install --cask anki
-# Obsidian 
 brew install --cask obsidian
-# Sourcetree
 brew install --cask sourcetree
-# Todoist
 brew install --cask todoist
-# Syntax highlighting
 brew install --cask --no-quarantine syntax-highlight
-# raycast
 brew install --cask raycast
