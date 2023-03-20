@@ -48,3 +48,5 @@ brew install --cask sourcetree # sourcetree
 brew install mcfly # mcfly: for shell history searching
 eval "$(mcfly init zsh)" >> ~/.zshrc # ref: https://github.com/cantino/mcfly
 exec $SHELL
+
+wait
