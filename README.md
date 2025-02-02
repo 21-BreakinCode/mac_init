@@ -7,7 +7,7 @@ For instructions on how to install Homebrew, please refer to:
 - [English version](install_homebrew/README.md)
 - [中文版本 (Chinese version)](install_homebrew/README_zh-TW.md)
 
-## Install pkg via Brewfile | 套過 Brewfile 安裝軟體
+## Install pkg via Brewfile | 透過 Brewfile 安裝軟體
 
 For instructions on how to install/update pkg via brewfile, please refer to:
 
